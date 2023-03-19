@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html {
+ scroll-behaviour: smooth;
+}
+
+:root {
+  --icon-size-40: 40px;
+  --icon-size-30: 32px;
+  --image-courses-item-height: 180px;
+  --image-course-height: 150px;
+  --image-courses-item-video-height: 250px;
+  --image-courses-item-video-width: calc(var(--image-courses-item-video-height) * 16 / 9);
+  /*--course-video-height: 500px;
+  --course-video-width: calc(var(--image-courses-item-video-height) * 16 / 9);*/
+  --course-lesson-image-height: 200px;
+  --image-course-height: 400px;
+
+  --scroll-menu-course-size: 64px;
+  --scroll-menu-course-icon-size: 48px;
+
+  --box-shadow-selected-lesson: 4px;
+  --box-shadow-selected-lesson-minus: -4px;
+  --box-shadow-selected-lesson-color-hover: #2e7d32;
+  --box-shadow-selected-lesson-color-hover2: #d32f2f;
+  --box-shadow-selected-lesson-color: #ed6c02;
+
+  --size-icon-video: 40px;
+  --size-icon-video1: 32px;
+  --width-volume-slider: 100px;
+  --height-volume-slider: 15px;
+  --size-thumb-volume-slider: 32px;
+  --progress-video-height: 35px;
+  --video-playrate-width: 60px;
+  --video-progressbar-bottom: 75px;
+  --video-volume-left: calc(1% + 1% + 56px);
+  --video-playrate-right: calc(var(--video-volume-left));
+  --video-controls-1-bottom: calc((var(--video-progressbar-bottom) - 56px) / 2);
+  --video-controls-2-bottom: calc((var(--video-progressbar-bottom) - 40px) / 2);
+
+  --video-play-center-left: calc(50% - (56px / 2));
+  --video-play-center-top: calc(50% - (56px / 2));
+
+  --pip-video-height: 200px;
+  --pip-video-width: calc(var(--pip-video-height) * 16 / 9);
+
+  --icon-size-20: 18px;
+
+  --hls-video-player-status-width: 96px;
+  --hls-video-player-status-height: 96px;
+  --hls-video-player-status-width-icon: 64px;
+  --hls-video-player-status-height-icon: 64px;
+
+  --hls-video-player-status-height-button: 76px;
+
+  --box-shadow-hls-player-pip: 8px;
+  --box-shadow-hls-player-pip-minus: -8px;
+  --box-shadow-hls-player-pip-color: #ed6c02;
+
+  --hls-video-player-width: calc(100%);
+  --hls-video-player-height: calc(calc(var(--hls-video-player-width)) * 9 / 16);
+
+  --hls-video-player-height-xs: calc((480px - 48px) * 9 / 16);
+  --hls-video-player-height-sm: calc((600px - 60px) * 9 / 16);
+  --hls-video-player-height-md: calc((960px - 96px) * 9 / 16);
+  --hls-video-player-height-lg: calc(((1280px - 128px) * 9 / 16));
+
+  --course-lesson-width: 300px;
+
+  --icon-size-64: 64px;
+
+  --header-height: 75px;
+  --footer-height: 55px;
+  --courses-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--course-height-add));
+  --courses-pagination-height: 75px;
+  --course-height: calc(100vh - var(--header-height) - var(--footer-height) - var(--course-height-add));
+  --course-height-add: 8px;
+}
+
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
